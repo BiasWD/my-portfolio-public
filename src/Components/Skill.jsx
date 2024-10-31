@@ -21,9 +21,9 @@ function Skill({ logo, title, inView, delay }) {
           src={logo}
           className="h-auto w-full pt-4 opacity-75 transition duration-200 group-hover:opacity-100 object-contain"
         />
-        <span className="font-orbitron pt-1 text-xs leading-tight lg:text-sm">
+        <div className="font-orbitron pt-1 b-auto text-xs leading-tight lg:text-sm">
           {title}
-        </span>
+        </div>
       </div>
     </motion.div>
   );
