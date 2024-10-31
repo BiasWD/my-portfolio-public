@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Footer({ anchorClick }) {
   return (
-<>
-    <div className="flex h-20 flex-1 items-center justify-center text-white">
+    <>
+      <div className="flex h-20 flex-1 items-center justify-center text-white">
         <a
           onClick={(e) => anchorClick(e, "intro")}
           className="group mx-auto flex w-fit cursor-pointer flex-col items-center text-white transition-all duration-200 hover:text-blue-500"
@@ -31,21 +31,23 @@ function Footer({ anchorClick }) {
           </p>
         </a>
       </div>
-    <div className="flex h-20 md:flex-row flex-col items-center text-sm md:text-base justify-center overflow-hidden md:bg-blue-500 text-white">
-      <div className="flex-1 text-center">
-        <p>
-        <p>© 2024 Tobias Sheets. All rights reserved.</p>
-        </p>
-      </div>
+      <div className="flex h-20 flex-col items-center justify-center overflow-hidden text-sm text-white md:flex-row md:bg-blue-500 md:text-base">
+        <div className="flex-1 text-center">
+          <p>
+            <p>© 2024 Tobias Sheets. All rights reserved.</p>
+          </p>
+        </div>
 
-      <div className="flex-1 text-center text-white">
-        <p>
-          Icons From Flaticon by&nbsp;
-          <Link to="/Credits" className="text-blue-500 md:text-black">Various Authors</Link>
-          .
-        </p>
+        <div className="flex-1 text-center text-white">
+          <p>
+            Icons From Flaticon by&nbsp;
+            <Link to="/Credits" className="text-blue-500 md:text-black">
+              Various Authors
+            </Link>
+            .
+          </p>
+        </div>
       </div>
-    </div>
     </>
   );
 }

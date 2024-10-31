@@ -34,7 +34,9 @@ function ProjectRight({ title, image, desc, liveLink, ghlink }) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => {
-          setIsHovered(false); toggleOpen(); }}
+          setIsHovered(false);
+          toggleOpen();
+        }}
         layout
       >
         <motion.img
@@ -57,7 +59,7 @@ function ProjectRight({ title, image, desc, liveLink, ghlink }) {
         <div className="absolute inset-0 flex items-center justify-center">
           <motion.h3
             className="font-orbitron text-2xl font-semibold text-white md:text-4xl"
-            style={{textShadow: "0px 4px 10px rgba(0, 0, 0, 1)"}}
+            style={{ textShadow: "0px 4px 10px rgba(0, 0, 0, 1)" }}
             variants={{
               hoverProject: {
                 scale: 1.1,
@@ -106,13 +108,13 @@ function ProjectRight({ title, image, desc, liveLink, ghlink }) {
                   <img
                     src={githubLogo}
                     alt="Github logo"
-                    className="rounded-full bg-white border-2"
+                    className="rounded-full border-2 bg-white"
                   />
                 </motion.a>
               )}
               {liveLink && (
                 <motion.a
-                  className="font-orbitron mx-5 flex h-12 w-12 border-2 cursor-pointer items-center justify-center rounded-full bg-white text-sm font-bold text-black"
+                  className="font-orbitron mx-5 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-2 bg-white text-sm font-bold text-black"
                   initial={{ scale: 0 }}
                   animate={{
                     scale: 1,

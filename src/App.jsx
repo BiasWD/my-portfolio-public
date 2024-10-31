@@ -1,11 +1,10 @@
 import Header from "./Components/Header.jsx";
 import Intro from "./Pages/Intro.jsx";
 import AboutMe from "./Pages/AboutMe.jsx";
-import Projects from './Pages/Projects.jsx';
-import Contact from './Pages/Contact.jsx';
+import Projects from "./Pages/Projects.jsx";
+import Contact from "./Pages/Contact.jsx";
 
 function App() {
-
   const handleAnchorClick = (e, id) => {
     e.preventDefault();
     const section = document.getElementById(id);
@@ -16,11 +15,11 @@ function App() {
 
   return (
     <>
-      <Header anchorClick={handleAnchorClick}/>
-      <Intro anchorClick={handleAnchorClick}/>
+      <Header anchorClick={handleAnchorClick} />
+      <Intro anchorClick={handleAnchorClick} />
       <AboutMe />
       <Projects />
-      <Contact anchorClick={handleAnchorClick}/>
+      <Contact anchorClick={handleAnchorClick} />
     </>
   );
 }

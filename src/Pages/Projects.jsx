@@ -5,12 +5,6 @@ import LittleLemon from "../images/littlelemonwebapp1.jpg";
 import PetCompanion from "../images/petcompanionsite1.jpg";
 import Portfolio from "../images/portfoliosite1.jpg";
 import ToDo from "../images/todolist1.jpg";
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion";
 
 function Projects() {
   const EdenDesc = (
@@ -37,16 +31,20 @@ function Projects() {
   const PetDesc = (
     <>
       <p className="pb-10 pt-3">
-        Using pure <strong>HTML</strong> and <strong>CSS</strong>, I created this site for a class project.
-        Additionally, I utilized <strong>Photoshop</strong> and <strong>Illustrator</strong> for the branding of
-        Pet Companion.
+        Using pure <strong>HTML</strong> and <strong>CSS</strong>, I created
+        this site for a class project. Additionally, I utilized{" "}
+        <strong>Photoshop</strong> and <strong>Illustrator</strong> for the
+        branding of Pet Companion.
       </p>
     </>
   );
 
   const ToDoDesc = (
     <>
-      <p className="pb-10 pt-3">I developed a straightforward to-do list application that allows a user to create, arrange, and delete tasks. Built with <strong>React</strong></p>
+      <p className="pb-10 pt-3">
+        I developed a straightforward to-do list application that allows a user
+        to create, arrange, and delete tasks. Built with <strong>React</strong>
+      </p>
     </>
   );
 
@@ -66,44 +64,53 @@ function Projects() {
 
   const PortfolioDesc = (
     <>
-      <p className="pb-10 pt-3">While developing this portfolio, I used <strong>Vite</strong> along with <strong>Tailwind CSS</strong> for a fast development experience and efficient, responsive styling. I explored and utilized several <strong>React</strong> libraries such as <strong>Formik</strong> for form handling, <strong>Yup</strong> for validation, the <strong>Intersection Observer API</strong> to trigger effects based on scroll position, and <strong>Framer Motion</strong> to animate components and bring the interface to life.</p>
+      <p className="pb-10 pt-3">
+        While developing this portfolio, I used <strong>Vite</strong> along with{" "}
+        <strong>Tailwind CSS</strong> for a fast development experience and
+        efficient, responsive styling. I explored and utilized several{" "}
+        <strong>React</strong> libraries such as <strong>Formik</strong> for
+        form handling, <strong>Yup</strong> for validation, the{" "}
+        <strong>Intersection Observer API</strong> to trigger effects based on
+        scroll position, and <strong>Framer Motion</strong> to animate
+        components and bring the interface to life.
+      </p>
     </>
   );
 
   return (
     <section
       id="projects"
-      className="bg-black bg-cover bg-center bg-fixed border-t-[1px] border-white border-opacity-30"
+      className="border-t-[1px] border-white border-opacity-30 bg-black bg-cover bg-fixed bg-center"
     >
-      <div className="md:mx-auto mx-2 flex max-w-7xl flex-col overflow-hidden py-20 md:py-40 text-white">
-        <h2 className="mb-10 mx-auto w-fit px-12 text-center text-4xl md:text-6xl font-semibold text-white">
+      <div className="mx-2 flex max-w-7xl flex-col overflow-hidden py-20 text-white md:mx-auto md:py-40">
+        <h2 className="mx-auto mb-10 w-fit px-12 text-center text-4xl font-semibold text-white md:text-6xl">
           Projects
         </h2>
         <div className="bg-projects-bg rounded-xl bg-fixed bg-center">
-        <ProjectLeft
-          title="Eden Roots Website"
-          image={EdenRoots}
-          desc={EdenDesc}
-          liveLink="https://edenrootslawncare.com"
-          ghlink="https://github.com/BiasWD/EdenRLC.git"
-        />
-        <ProjectRight
-          title="Table Reservation"
-          image={LittleLemon}
-          desc={LemonDesc}
-          ghlink="https://github.com/BiasWD/LLWebApp.git"
-        />
-        <ProjectLeft
-          title="Pet Hospital Site"
-          image={PetCompanion}
-          desc={PetDesc}
-        />
-        <ProjectRight
-          title="My Portfolio Site"
-          image={Portfolio}
-          desc={PortfolioDesc}
-        />
-        <ProjectLeft title="To-Do List App" image={ToDo} desc={ToDoDesc} />
+          <ProjectLeft
+            title="Eden Roots Website"
+            image={EdenRoots}
+            desc={EdenDesc}
+            liveLink="https://edenrootslawncare.com"
+            ghlink="https://github.com/BiasWD/EdenRLC.git"
+          />
+          <ProjectRight
+            title="Table Reservation"
+            image={LittleLemon}
+            desc={LemonDesc}
+            ghlink="https://github.com/BiasWD/LLWebApp.git"
+          />
+          <ProjectLeft
+            title="Pet Hospital Site"
+            image={PetCompanion}
+            desc={PetDesc}
+          />
+          <ProjectRight
+            title="My Portfolio Site"
+            image={Portfolio}
+            desc={PortfolioDesc}
+          />
+          <ProjectLeft title="To-Do List App" image={ToDo} desc={ToDoDesc} />
         </div>
       </div>
     </section>

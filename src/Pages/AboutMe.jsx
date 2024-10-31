@@ -1,12 +1,14 @@
 import Hat from "../images/education.png";
 import Meta from "../images/meta.png";
 import TechStack from "../Components/TechStack";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 function AboutMe() {
-
   return (
-    <section id="about" className="border-t-2 border-blue-500 bg-black overflow-hidden">
+    <section
+      id="about"
+      className="overflow-hidden border-t-2 border-blue-500 bg-black"
+    >
       <div className="mx-auto flex max-w-7xl flex-col">
         <div className="my-20 md:my-40">
           <h2 className="w-full px-6 text-4xl font-semibold text-white md:px-12 md:text-6xl">
@@ -76,7 +78,7 @@ function AboutMe() {
           <h3 className="font-orbitron text-whitetext-2xl relative z-40 mx-auto -mb-16 mt-20 w-full rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 px-12 py-4 text-center font-semibold md:text-4xl">
             Technolgy I work best with...
           </h3>
-            <TechStack />
+          <TechStack />
         </div>
       </div>
     </section>

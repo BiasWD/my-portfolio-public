@@ -51,8 +51,7 @@ function ContactForm({ setSuccess, setFail }) {
         .max(1000, "Must be 1000 characters or less")
         .required("Required"),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: () => {
       sendEmail();
     },
   });
@@ -61,7 +60,7 @@ function ContactForm({ setSuccess, setFail }) {
     <form
       ref={form}
       onSubmit={formik.handleSubmit}
-      className="m-2 md:m-10 flex max-w-xl flex-1 mt-20 flex-col rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 p-10"
+      className="m-2 mt-20 flex max-w-xl flex-1 flex-col rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 p-10 md:m-10"
     >
       <h4 className="font-orbitron mb-10 border-b-2 border-black pb-2 text-center text-3xl text-black">
         Let's Connect
@@ -155,16 +154,18 @@ function ContactForm({ setSuccess, setFail }) {
         <div className="h-5"></div>
       )}
 
-      {!loading ? <button
-        type="submit"
-        className="mx-auto mt-5 w-fit rounded-lg border-2 transition-all duration-200 hover:border-black hover:text-black active:text-opacity-50 active:transition-none px-10 py-2 font-semibold"
-      >
-       Submit
-      </button> :
-      <div className="mx-auto border-2 border-white border-opacity-0 mt-5 w-fit rounded-lg px-10 py-2 font-semibold">
-        <Spinner />
-      </div>
-}
+      {!loading ? (
+        <button
+          type="submit"
+          className="mx-auto mt-5 w-fit rounded-lg border-2 px-10 py-2 font-semibold transition-all duration-200 hover:border-black hover:text-black active:text-opacity-50 active:transition-none"
+        >
+          Submit
+        </button>
+      ) : (
+        <div className="mx-auto mt-5 w-fit rounded-lg border-2 border-white border-opacity-0 px-10 py-2 font-semibold">
+          <Spinner />
+        </div>
+      )}
     </form>
   );
 }
