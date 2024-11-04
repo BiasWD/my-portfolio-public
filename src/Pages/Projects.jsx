@@ -110,7 +110,12 @@ function Projects() {
             image={Portfolio}
             desc={PortfolioDesc}
           />
-          <ProjectLeft title="To-Do List App" image={ToDo} desc={ToDoDesc} />
+          <ProjectLeft
+            title="To-Do List App"
+            image={ToDo}
+            desc={ToDoDesc}
+            ghlink="https://github.com/BiasWD/To-do-List.git"
+          />
         </div>
       </div>
     </section>
