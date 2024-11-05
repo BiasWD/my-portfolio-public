@@ -92,7 +92,7 @@ function Projects() {
             image={EdenRoots}
             desc={EdenDesc}
             liveLink="https://edenrootslawncare.com"
-            ghlink="https://github.com/BiasWD/EdenRLC.git"
+            ghlink="https://github.com/BiasWD/EdenRLC-Public.git"
           />
           <ProjectRight
             title="Table Reservation"
@@ -104,6 +104,7 @@ function Projects() {
             title="Pet Hospital Site"
             image={PetCompanion}
             desc={PetDesc}
+            ghlink="https://github.com/BiasWD/PetCompanionSite.git"
           />
           <ProjectRight
             title="My Portfolio Site"
