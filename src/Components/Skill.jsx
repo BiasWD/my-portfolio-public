@@ -17,6 +17,7 @@ function Skill({ logo, title, inView, delay }) {
     >
       <div className="animate-tilt absolute -inset-0.5 mx-5 my-5 rounded-lg bg-blue-500 bg-gradient-to-r from-blue-500 to-purple-500 opacity-75 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
       <div className="relative mx-5 my-5 flex h-28 w-28 flex-col items-center justify-center rounded-lg bg-black px-10 py-10 text-center text-xl text-gray-400 transition duration-200 group-hover:text-white md:h-40 md:w-40">
+        <div>
         <img
           src={logo}
           className="h-auto w-full pt-4 opacity-75 transition duration-200 group-hover:opacity-100 object-contain"
@@ -24,6 +25,7 @@ function Skill({ logo, title, inView, delay }) {
         <span className="font-orbitron pt-1 b-auto text-xs leading-tight lg:text-sm">
           {title}
         </span>
+        </div>
       </div>
     </motion.div>
   );
