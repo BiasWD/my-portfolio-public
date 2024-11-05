@@ -20,7 +20,7 @@ function Skill({ logo, title, inView, delay }) {
         <div>
         <img
           src={logo}
-          className="h-auto w-full pt-4 opacity-75 transition duration-200 group-hover:opacity-100 object-contain"
+          className="h-12 md:h-20 w-full pt-4 opacity-75 transition duration-200 group-hover:opacity-100 object-contain"
         />
         <span className="font-orbitron pt-1 b-auto text-xs leading-tight lg:text-sm">
           {title}
